@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./src/favicon/site.webmanifest">
+</head>
+<body>
+    <header class="header">
+        <h1 id="title">Pesquisa de Jogos</h1>
+        <p id="description">Formulário de pesquisa sobre os jogadores de jogos eletrônicos</p>
+    </header>
+
+    <main>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label">Nome</label>
+                <input id="name" type="text" placeholder="Insira seu nome" required />
+            </div>
+            <div class="form-group">
+                <label id="email-label">E-mail</label>
+                <input id="email" type="email" placeholder="Insira seu e-mail" required />
+            </div>
+            <div class="form-group">
+                <label id="number-label">Idade</label>
+                <input id="number" type="number" min="18" max="120" placeholder="Insira sua idade" />
+            </div>
+
+            <div class="form-group">
+                <p id="select-label">Qual opção melhor descreve seu interesse em jogos eletrônicos?</p>
+                <select id="dropdown">
+                    <option disabled selected value>Selecione uma opção</option>
+                    <option value="no_play">Não acompanho</option>
+                    <option value="watcher">Às vezes vejo outros jogarem</option>
+                    <option value="play_sometimes">Jogo de vez em quando</option>
+                    <option value="player">Jogar pra mim é um hobbie</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p id="radio-label">O GOTY 2018 foi roubado?</p>
+                <label class="center_option" for="without_answner"><input id="without_answner" type="radio" name="radio_button" value="without_answner" checked />Não acompanhei</label>
+                <label class="center_option" for="no"><input id="no" type="radio" name="radio_button" value="no" />Não</label>
+                <label class="center_option" for="dont_know"><input id="dont_know" type="radio" name="radio_button" value="dont_know" />Tenho minhas dúvidas</label>
+                <label class="center_option" for="yes"><input id="yes" type="radio" name="radio_button" value="yes" />Sim</label>
+            </div>
+
+            <div class="form-group">
+                <p id="select-label">Qual seu gênero de jogo favorito?</p>
+                <select id="dropdown">
+                    <option disabled selected value>Selecione uma opção</option>
+                    <option value="no_play">Não acompanho</option>
+                    <option value="action/adventure">Ação/Aventura</option>
+                    <option value="rpg">RPG</option>
+                    <option value="fight">Luta</option>
+                    <option value="soulslike">Roguelike</option>
+                    <option value="terror">Terror</option>
+                    <option value="strategy">Estratégia/Tabuleiro/Turnos</option>
+                    <option value="racing">Corrida</option>
+                    <option value="sports">Esportes</option>
+                    <option value="simulation">Simulação</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p id="checkbox-label">Quais os seus jogos favoritos?</p>
+                <label class="center_option" for="skyrim"><input type="checkbox" id="skyrim" name="fav_games" value="skyrim">The Elder Scrolls V: Skyrim</label>
+                <label class="center_option" for="gta"><input type="checkbox" id="gta" name="fav_games" value="gta">GTA San Andreas</label>
+                <label class="center_option" for="re4"><input type="checkbox" id="re4" name="fav_games" value="re4">Resident Evil 4</label>
+                <label class="center_option" for="celeste"><input type="checkbox" id="celeste" name="fav_games" value="celeste">Celeste</label>
+                <label class="center_option" for="rdr2"><input type="checkbox" id="rdr2" name="fav_games" value="rdr2">Red Dead Redemption 2</label>
+                <label class="center_option" for="mineirinho"><input type="checkbox" id="mineirinho" name="fav_games" value="mineirinho">Mineirinho Ultra Adventures</label>
+            </div>
+
+            <div class="form-group">
+                <p>Algum comentário ou sugestão?</p>
+                <textarea id="comment" rows="10" cols="35" maxlength="255" wrap="hard" spellcheck="true"></textarea>
+            </div>
+
+            <button id="submit" type="submit"><b>Enviar</b></button>
+        </form>
+    </main>
+
+    <footer>
+        <img id="warning" src="/survey-form/src/info.png" alt="Lamp" width="32" height="32">
+        <p id="warning_text">Desenvolvido por Gabriel Calebe</p>
+    </footer>
+</body>
+</html>
