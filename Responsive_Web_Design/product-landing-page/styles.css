@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: "Signika Negative", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 5rem;
+    background-color: rgba(59, 161, 212, 0.8);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3rem;
+}
+
+#img_logo {
+    max-height: 4rem;
+}
